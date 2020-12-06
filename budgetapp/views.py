@@ -42,12 +42,7 @@ def project_detail(request, project_slug):
         id = json.loads(request.body)['id']
         expense = get_object_or_404(Expense, id=id)
         expense.delete()
-
         return HttpResponse('')
-    
-        #form = ExpenseForm(request.POST)
-            
-
     return HttpResponseRedirect(project_slug)
 
     
