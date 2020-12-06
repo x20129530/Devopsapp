@@ -37,7 +37,7 @@ function fetchCategoryArray(){
 }
 
 function updateCategoriesString(){
-    categories = fetchCategoryArray()
+    let categories = fetchCategoryArray()
     document.querySelector('input[name="categoriesString"]').value = categories.join(',')
 }
 
