@@ -45,7 +45,7 @@ def project_detail(request, project_slug):
 
         return HttpResponse('')
     
-        form = ExpenseForm(request.POST)
+        #form = ExpenseForm(request.POST)
             
 
     return HttpResponseRedirect(project_slug)
