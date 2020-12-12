@@ -12,6 +12,9 @@ pre_build:
 post_build:
     commands:
       -echo build completed on `date` 
+build:
+    commands:
+      - python manage.py runserver
 artifacts:
   files:
     - 'ec2django/**/*'
