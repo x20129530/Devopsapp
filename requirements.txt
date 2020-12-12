@@ -1,2 +1,2 @@
-# dependencies that mirror production
+# dependencies that mirror productions
 -r requirements/prod.txt
