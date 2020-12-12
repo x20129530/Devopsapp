@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
- - source: /Devopsapp/
+ - source: /Devops/
    destination: /home/ec2-user/ec2django
  - source: /budgetapp/
    destination: /home/ec2-user/Devopsapp
