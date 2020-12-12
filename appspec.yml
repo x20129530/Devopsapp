@@ -4,7 +4,7 @@ files:
  - source: /Devopsapp/
    destination: /home/ec2-user/ec2django
  - source: /budgetapp/
-   destination: /home/ec2-user/budgetapp
+   destination: /home/ec2-user/Devopsapp
  - source: /manage.py
    destination: /home/ec2-user
  - source: /supervisord.conf
