@@ -1,21 +1,21 @@
 version: 0.2
 os: linux
 phases:
-  pre_build:
+  install:
     commands:
-      - echo "Before running tests"
-      - sudo ls/root
       # Install dependencies needed for running tests
       - pip install -r requirements/common.txt
 
-  build:
+  pre_build:
     commands:
       # Discover and run unit tests. For more information, see <https://docs.djangoproject.com/en/2.0/topics/testing/overview/>
-      - echo "running all unit tests"
       - python manage.py test
-  post_build:
-    commands:
-      -echo build completed on `date` 
+
 artifacts:
-  files: 
-    - '**/*'
+  files:
+    - 'ec2django/**/*'
+    - 'budgetapp/**/*'
+    - 'scripts/**/*'
+    - 'appspec.yml'
+    - 'manage.py'
+    - 'requirements/**/*'
