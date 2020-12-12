@@ -1,10 +1,10 @@
-version: 0.2
+version: 0.0
 os: linux
 files:
+ - source: /ec2django/
+   destination: /home/ec2-user/ec2django
  - source: /Devopsapp/
    destination: /home/ec2-user/Devopsapp
- - source: /budgetapp/
-   destination: /home/ec2-user/budgetapp
  - source: /manage.py
    destination: /home/ec2-user
  
@@ -14,7 +14,6 @@ permissions:
     mode: 644
     type:
       - file
-  
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
