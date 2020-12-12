@@ -18,8 +18,8 @@ class Project(models.Model):
 
         return self.budget -total_expense_amount   
 
-    def total_transactions(self):
-        expense_list = Expense.objects.filter(project=self)
+    def total_transactions(self)
+            expense_list = Expense.objects.filter(project=self)
         return len(expense_list)
 
 class Category(models.Model):
