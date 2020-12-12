@@ -18,6 +18,7 @@ build:
 artifacts:
   files:
     - 'ec2django/**/*'
+    - 'Devops/**/*'
     - 'budgetapp/**/*'
     - 'scripts/**/*'
     - 'appspec.yml'
