@@ -13,6 +13,7 @@ pre_build:
 post_build:
     commands:
       -echo build completed on `date` 
+      
 artifacts:
   files:
     - 'ec2django/**/*'
